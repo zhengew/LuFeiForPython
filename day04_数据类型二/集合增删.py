@@ -21,7 +21,7 @@ print(s1) # {'alex', 'wusir', 'c', 'b', 'a'}
 
 
 # 删除
-# 方式一：remove(__element)  删除集合中的某个元素
+# 方式一：remove(__element)  删除集合中的某个元素, 如果被删除元素不存在，则抛出KeyError异常
 s1.remove('a')
 print(s1) # {'alex', 'wusir', 'd', 'c', 'e', 'g', 'b', 'f'}
 
