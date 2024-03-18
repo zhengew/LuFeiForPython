@@ -33,7 +33,7 @@ print(data, d1) # run {'name': 'age', 'alex': 18, 'sex': 'female'}
 data = d1.pop('hobby', None)
 print(data, d1) # None {'name': 'age', 'alex': 18, 'sex': 'female'}
 
-# popitem()  python3.5 前，随机删除，3.5及以后，删除最后一个键值对，返回值为被删除的键值对，类型为元素
+# popitem()  python3.5 前，随机删除，3.5及以后，删除最后一个键值对，返回值为被删除的键值对，类型为元组
 # print(d1)
 data = d1.popitem()
 print(data, type(data), d1) # ('sex', 'female') <class 'tuple'> {'name': 'age', 'alex': 18}
@@ -106,6 +106,8 @@ print(key_value_list, type(key_value_list)) # dict_items([('name', 'alex'), ('ag
 for index, data in enumerate(d1.items(), 1):
     print(index, data[0], data[1])
 
+l1 = enumerate(['a', 'b', 'c'], 1)
+print(l1, list(l1))
 
 
 
